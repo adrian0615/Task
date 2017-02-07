@@ -48,8 +48,10 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: taskCellIdentifier, for: indexPath)
         
         cell.textLabel?.text = tasks[indexPath.row].title
-        cell.textLabel?.textColor = UIColor.red
-        cell.backgroundColor = UIColor.black
+        cell.textLabel?.textColor = UIColor.blue
+        cell.textLabel?.textAlignment = .center
+
+        
         
         return cell
     }
